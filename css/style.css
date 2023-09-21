@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: hsl(204, 43%, 93%);
+  padding: 4rem 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.container {
+  width: 85%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.price-grid {
+  -webkit-box-shadow: 0px 0px 40px -10px hsl(204, 43%, 80%);
+          box-shadow: 0px 0px 40px -10px hsl(204, 43%, 80%);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.price-grid .price-grid-top {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+}
+.price-grid .price-grid-top .price-grid-top-h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.price-grid .price-grid-top .price-grid-top-h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.5rem;
+}
+.price-grid .price-grid-top .price-grid-top-p {
+  line-height: 1.5rem;
+  color: hsl(218, 22%, 67%);
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col:first-child {
+  background-color: hsl(179, 62%, 40%);
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col:last-child {
+  background-color: hsl(179, 62%, 43%);
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col {
+  padding: 2rem 1.5rem;
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-col-h1 {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-price .price-grid-bottom-col-p {
+  color: hsl(204, 43%, 93%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-price .price-grid-bottom-col-p-span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 80%);
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-col-full-access-p {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1.5rem;
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-col-button {
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 0.375rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-col-button:hover {
+  background-color: hsl(204, 43%, 80%);
+}
+.price-grid .price-grid-bottom .price-grid-bottom-col .price-grid-bottom-col-why-us-p {
+  margin-bottom: 0.25rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.price-grid-footer {
+  margin-top: 2rem;
+}
+.price-grid-footer .price-grid-footer-attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.price-grid-footer .price-grid-footer-attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .container {
+    width: 50%;
+  }
+  .price-grid .price-grid-top {
+    padding: 3rem;
+  }
+  .price-grid .price-grid-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .price-grid .price-grid-bottom .price-grid-bottom-col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+    padding: 3rem;
+  }
+  .price-grid-footer {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

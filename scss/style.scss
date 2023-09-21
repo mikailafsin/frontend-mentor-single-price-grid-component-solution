@@ -1,0 +1,194 @@
+@import "fonts";
+@import "colors";
+@import "reset";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $karlaFf;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightGray;
+    padding: 4rem 0;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: .875rem;
+
+}
+
+.container {
+    width: 85%;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.price-grid {
+
+    box-shadow: 0px 0px 40px -10px $darkGray;
+    border-radius: .25rem;
+    overflow: hidden;
+
+    .price-grid-top {
+        padding: 2rem 1.5rem;
+        background-color: #fff;
+
+        .price-grid-top-h1 {
+            color: $cyan;
+            margin-bottom: 1.5rem;
+            font-weight: 700
+        }
+
+        .price-grid-top-h2 {
+            color: $brightYellow;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-grid-top-p {
+            line-height: 1.5rem;
+            color: $grayishBlue;
+        }
+    }
+
+    .price-grid-bottom {
+
+        .price-grid-bottom-col:first-child {
+            background-color: $darkCyan;
+        }
+
+        .price-grid-bottom-col:last-child {
+            background-color: $cyan;
+        }
+
+        .price-grid-bottom-col {
+            padding: 2rem 1.5rem;
+
+            .price-grid-bottom-col-h1 {
+                color: $lightGray;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+            }
+
+            .price-grid-bottom-price {
+                display: flex;
+                align-items: center;
+                gap: .625rem;
+                margin-bottom: .5rem;
+
+                .price-grid-bottom-col-p {
+                    color: $lightGray;
+
+                    font: {
+                        size: 2rem;
+                        weight: 700
+                    }
+                }
+
+                .price-grid-bottom-col-p-span {
+                    font: {
+                        size: .875rem;
+                        weight: 400;
+                    }
+
+                    color: $darkGray;
+                }
+            }
+
+            .price-grid-bottom-col-full-access-p {
+                color: $lightGray;
+                margin-bottom: 1.5rem;
+            }
+
+            .price-grid-bottom-col-button {
+                color: $lightGray;
+                background-color: $brightYellow;
+                text-align: center;
+                width: 100%;
+                padding: 1rem 0;
+                border-radius: .375rem;
+                border: none;
+                outline: none;
+                cursor: pointer;
+
+                font: {
+                    weight: 700;
+                    size: .875rem;
+                }
+
+                &:hover {
+                    background-color: $darkGray;
+                }
+            }
+
+            .price-grid-bottom-col-why-us-p {
+                margin-bottom: .25rem;
+                color: $lightGray;
+            }
+        }
+    }
+}
+
+.price-grid-footer {
+    margin-top: 2rem;
+
+    .price-grid-footer-attribution {
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .price-grid {
+
+        .price-grid-top {
+            padding: 3rem;
+        }
+
+        .price-grid-bottom {
+            display: flex;
+
+            .price-grid-bottom-col {
+                flex: 0 0 auto;
+                width: 50%;
+                padding: 3rem;
+            }
+        }
+    }
+
+    .price-grid-footer {
+        margin-top: 1rem;
+    }
+}
